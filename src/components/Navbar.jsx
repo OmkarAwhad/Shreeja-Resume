@@ -41,19 +41,26 @@ function Navbar() {
 					</NavLink>
 				</div>
 				<div className="md:hidden">
-					<button onClick={() => setIsOpen(!isOpen)} className="text-2xl border-none outline-none focus:outline-none">
+					<button
+						onClick={() => setIsOpen(!isOpen)}
+						className="text-2xl border-none outline-none focus:outline-none"
+					>
 						{isOpen ? "✕" : "☰"}
 					</button>
 				</div>
 				<div className="border border-green-500 px-3 py-1 sm:px-4 sm:py-2 rounded-lg bg-green-500 text-white hover:bg-orange-500 hover:border-orange-500 transition-all duration-300 text-sm sm:text-base">
-					<a target="_blank" href="https://drive.google.com/file/d/1oF6YoFVs3sXBKwWHGcd4tssAULwXOPOo/view?usp=drivesdk">
+					<a
+						target="_blank"
+						href="https://drive.google.com/file/d/1L_ph0HV033NYzbwFqBecZp66k691jrNI/view?usp=sharing"
+					>
 						Hire Me
 					</a>
 				</div>
 			</div>
 			<div
-				className={`md:hidden fixed top-[60px] sm:top-[80px] left-0 w-64 h-[calc(100vh-60px)] sm:h-[calc(100vh-80px)] bg-gradient-to-r from-cyan-50 to-cyan-100 transform transition-transform duration-300 ease-in-out z-40 overflow-y-auto ${isOpen ? "translate-x-0" : "-translate-x-full"
-					}`}
+				className={`md:hidden fixed top-[60px] sm:top-[80px] left-0 w-64 h-[calc(100vh-60px)] sm:h-[calc(100vh-80px)] bg-gradient-to-r from-cyan-50 to-cyan-100 transform transition-transform duration-300 ease-in-out z-40 overflow-y-auto ${
+					isOpen ? "translate-x-0" : "-translate-x-full"
+				}`}
 			>
 				<div className="flex flex-col space-y-4 text-center pt-6 px-4 text-navy text-lg font-medium">
 					<NavLink
